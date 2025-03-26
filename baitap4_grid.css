@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+   
+    color: #3E3F5B;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto 50px;
+    gap: 10px;
+    width: 80%;
+    background-color: #C7D9DD;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-color: #C7D9DD;
+}
+.text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 10px;
+}
